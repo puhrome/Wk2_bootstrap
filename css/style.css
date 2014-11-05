@@ -33,22 +33,28 @@ header.row h1 {
     font: .5em "courier new";
 }
 footer > .container-fluid h4 {
-    font-size: 2em;
     padding-bottom: 2%;
 }
 #story h2, .gallery h3 {
     text-align: center;
     padding-top: 1%;
-    padding-bottom: 1%;
-    font-family: "Courier New", arial, verdana, sans-serif;
-    font-size: 3em;
-    border-top:1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    padding-bottom: 3%;
+    font-family: "Cutive Mono", arial, verdana, sans-serif;
+    font-size: 2em;
+    border-top: 1px solid #ccc;
+    letter-spacing: 2px;
 
 }
 .entry1 p {
-    font-family: "Poiret One", helvetica, arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 2em;
+}
+.gallery h4 {
+    font-family: "amatic sc", cursive;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+    letter-spacing: 1px;
 }
 /* ===== C L A S S ==== S T Y L I N G ==== */
 
@@ -85,11 +91,11 @@ footer > .container-fluid {
     display: inline-flex;
 }
 blockquote {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     border: none;
 }
 blockquote p {
-    padding-top: 15%;
+    padding-top: 5%;
     font: 4em/2em "Courier New";
 }
 blockquote footer {
@@ -107,7 +113,8 @@ footer {
     padding: 0 0 1% 5%;
 }
 .foot-head h4 {
-    font: 4em "Raleway", san-serif;
+    font: 4em "Josefin Slab", san-serif;
+    letter-spacing: 2px;
 }
 .foot-head h4>em {
     font-weight: bold;
@@ -198,5 +205,9 @@ img {
     font-weight: 400;
     src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
-@icon-font-path:          "../fonts/";
-@icon-font-name:          "glyphicons-halflings-regular";
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5LO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
