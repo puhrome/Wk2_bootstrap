@@ -40,21 +40,22 @@ footer > .container-fluid h4 {
     padding-top: 1%;
     padding-bottom: 3%;
     font-family: "Cutive Mono", arial, verdana, sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     border-top: 1px solid #ccc;
     letter-spacing: 2px;
 
 }
 .entry1 p {
-    font-family: arial, sans-serif;
-    font-size: 2em;
+    font-family: "Oxygen", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
 }
 .gallery h4 {
-    font-family: "amatic sc", cursive;
+    font-family: "Courier New", cursive;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 1em;
-    letter-spacing: 1px;
+    padding: 1%;
 }
 /* ===== C L A S S ==== S T Y L I N G ==== */
 
@@ -210,4 +211,10 @@ img {
     font-style: normal;
     font-weight: 400;
     src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5LO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Oxygen Light'), local('Oxygen-Light'), url(http://fonts.gstatic.com/s/oxygen/v5/AwBqWF2kjhlybWamaKMPcbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
