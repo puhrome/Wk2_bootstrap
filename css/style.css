@@ -95,7 +95,7 @@ blockquote {
 }
 blockquote p {
     padding-top: 5%;
-    font: 2em/2em "Courier New", sans-serif;
+    font: 1.5em/2em "Courier New", sans-serif;
 }
 blockquote footer {
     background: none;
