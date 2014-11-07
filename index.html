@@ -39,30 +39,29 @@
     </header>       <!--End div for 'row'-->
     <!-- row 2 -->
     <!-- Start of DIV for 'row'-->
+    <div class="container">
         <div class="row">
-            <div class="jumbotron">
-                <div class="container">
-                <div class="pull-right">
-                    <img class="img-responsive" src="images/justin_small_03.jpg" alt="Profile Pic of Justin" rel="profile pic">
+            <div class="col-md-9">
                     <blockquote>
                         <p>I live in Seattle. This is my life. It probably isn't that strange but sometimes it feels that way.</p>
                         <footer class="quote">Justin, <cite>the Stranger in the Strange Life</cite></footer>
                     </blockquote>
-                </div>
             </div>
-        </div>   <!--End of DIV 'row' for Jumbotron-->
-    </div>
+            <div class="col-md-3">
+                <img src="images/justin_03.jpg" class="img-responsive" alt="Justin Profile Stranger Seattle">
+            </div>
+        </div>
     <!-- row 3 -->
-    <div class="container">       <!--Start of DIV class of "row" for body content-->
-        <div id="story">
-            <div class="row">           <!--Start of 'container'-->
+    <div class="container">       <!--Start of DIV class of "container" for body content-->
+        <div id="story">                <!--Start of DIV class 'story'-->
+            <div class="row">           <!--Start of 'row'-->
                 <h2>My Strange Adventures</h2>
-                    <article class="entry1">
+                    <article class="entry1">            <!--Article 1-->
                         <h3>February, 2014, Buffalo, NY.</h3>
                             <p>I think the air temperature was 10 degrees when I took this. We had gone downtown to get tacos from our friend who was working on a food truck at the time.</p>
                             <p>The longer I am away from Buffalo and Rochester, the more I realize (and am told) I have that “Midwestern Nice Guy Thing” going on. And I’m ok with that, because I guess it’s who I am.</p>
                     </article>
-                    <article class="entry1">
+                    <article class="entry1">        <!--Article 2-->
                         <h3>October, 2014 Seattle, WA</h3>
                             <p>I have been thinking a lot about the whole adage “distance makes the heart grow fonder.”
                             <p> For a long time, I didn’t write, I didn’t read, I didn’t take pictures, and I didn’t draw anything. I just worked and raced bikes. And then worked some more. And then rode some more.</p>
@@ -72,12 +71,14 @@
                            <p> Now it’s about mid ride beer stops and going at whatever pace I or we want to.
                             And smiles. And friendship. And riding for the pure joy of it.</p>
                     </article>
-            </div>
+            </div>                      <!--End of DIV class 'row'-->
+        </div>                      <!--End of DIV 'story'-->
+    </div>                      <!--End of 'container-->
+    <div class="container-fluid">                 <!--Start of class Container-->
+        <div class="gallery">
+            <h3>My Photos</h3>
         </div>
-    </div>
-        <div class="container">                 <!--Start of class Container-->
-            <div class="row gallery">                   <!--Start of Row and Gallery-->
-                <h3>My Photos</h3>
+            <div class="row">                   <!--Start of Row and Gallery-->
                 <div class="col-md-6 col-sm-6">          <!-- Start of 1:4 3 col in 12 col grid--> <!--For smaller view use col-xs-6 (6 across)-->
                     <h4>Where I stand</h4>
                     <img class="img-responsive" src="images/feet1_03.jpg" alt="Shoes">
@@ -95,9 +96,9 @@
                     <img class="img-responsive" alt="Public Market Magazine Stand" src="images/magazines1_03.jpg">
                 </div>                                  <!--End of 4:4 (3 Col) in 12 Col grid-->
             </div>                                  <!--End of class of Row and Gallery-->
-        </div>      <!--End of class 'container'-->
+    </div>      <!--End of class 'container'-->
     <!-- row 4 -->
-        <div class="container">
+    <div class="container">             <!--Start of class 'container' for PAGINATION-->
         <div class="pagination">
             <nav>
                 <ul class="pager">
@@ -106,36 +107,34 @@
                 </ul>
             </nav>
         </div>
-        </div>
-    <footer class="row">
-        <div class="container-fluid">
-            <div class="foot-head">
+    </div>                              <!--End of 'container' for PAGINATION-->
+    </div>          <!--End of DIV class 'container' body-->
+    <footer class="row">                    <!--Start of footer 'row-->
+        <div class="container-fluid">               <!--Start of container fluid-->
+            <div class="foot-head">                     <!---Start of class foot-head-->
                 <div class="col-sm-6 col-xs-12">
-                <h4>Say <em>hi!</em></h4>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-                    <form action="demo_form.asp">
-                        <form id="contact" method="post" action="html_form_send.php">
-                            <input class="form-control input-lg" id="name" type="text" placeholder="Name">
-                            <input class="form-control input-lg form-control input-sm" type="text" id="email" placeholder="Email">
-                            <textarea class="form-control" rows="5" placeholder="Drop me a line . . ."></textarea>
-                            <button type="button" class="btn btn-primary btn-lg active" id="message-btn">Send Message</button>
-                        </form>                   <!--End of form Contact-->
-                    </form>                  <!---End of form Demo-->
+                    <h4>Say <em>hi!</em></h4>
+                </div>
+                <div class="col-sm-6 col-xs-12">            <!--Start of class Col for Form Input-->
+                        <form action="demo_form.asp">               <!--Start of Form Input-->
+                            <form id="contact" method="post" action="html_form_send.php">   <!--Start of Form Contact-->
+                                <input class="form-control input-lg" id="name" type="text" placeholder="Name">
+                                <input class="form-control input-lg form-control input-sm" type="text" id="email" placeholder="Email">
+                                <textarea class="form-control" rows="5" placeholder="Drop me a line . . ."></textarea>
+                                <button type="button" class="btn btn-primary btn-lg active" id="message-btn">Send Message</button>
+                            </form>                   <!--End of form Contact-->
+                        </form>                  <!---End of form Demo-->
                 </div>                  <!-- End of Col-sm-6 for Form Input-->
-        </div>
-        <div class="row">      <!--Start of class 'copy'-->
-            <div class="col-md-12">
-            <div class="copy">
-                <h5>&copy 2014 The Strange Life</h5>
-            </div>
-        </div>              <!--End of class "copy"-->
-        </div>
-        </div>
+            </div>                                  <!--End of div class foot-head-->
+            <div class="row">      <!--Start of class 'row'-->
+                <div class="col-md-12">         <!--Start of Col-->
+                    <div class="copy">              <!--Start of class 'copy'-->
+                        <h5>&copy 2014 The Strange Life</h5>
+                    </div>                      <!--End of class 'copy'-->
+                </div>              <!--End of class "Col-md-12"-->
+            </div>              <!--End of class 'row'-->
+        </div>              <!--End of footer container-->
     </footer>           <!--End of Footer class 'row'-->
-
-</div>  <!--End of DIV Container-->
-
 <!-- javascript -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

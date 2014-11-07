@@ -11,17 +11,11 @@ body {
 /* ===== Header, h1, h2, h3, h4, h5, p ==== S T Y L I N G ==== */
 
 header h1 {
-    padding: 5% 0 5% 0;
+    padding: 5% 0 8% 0;
     text-align: center;
     margin: 0 auto;
     border-top: 2px dotted #cccccc;
-
 }
-.jumbotron {
-    margin: 0 auto;
-    background: #fff;
-}
-
 header.row h1 {
     font: 5em "Cutive Mono";
 }
@@ -32,27 +26,32 @@ header.row h1 {
 footer > .container-fluid h4 {
     padding-bottom: 2%;
 }
+#story h2 {
+    border-top: 2px solid #ccc;
+
+}
+.entry1 {
+    border-bottom: 1px solid #ccc;
+
+}
 #story h2, .gallery h3 {
     text-align: center;
     padding-top: 4%;
     padding-bottom: 3%;
     font-family: "Cutive Mono", arial, verdana, sans-serif;
     font-size: 1.8em;
-    border-top: 1px solid #ccc;
     letter-spacing: 2px;
 
 }
 .entry1 p {
-    font-family: "Oxygen", sans-serif;
-    font-size: 1.4em;
-    letter-spacing: 1px;
+    font: 1.4em/1.5em "Oxygen", sans-serif;
 }
 .entry1 h3 {
     font-family: "cutive mono", arial, verdana, sans-serif;
-    font-size: 1.4em;
+    font-size: .8em;
 }
 .gallery h4 {
-    font-family: "Courier New", cursive;
+    font-family: "Cutive Mono", cursive;
     text-align: center;
     font-size: 1.4em;
     line-height: 1.4em;
@@ -63,20 +62,16 @@ footer > .container-fluid h4 {
 .navbar-form .navbar-right {
     width: 30%;
 }
-footer > .container-fluid {
-    padding: 1% 3%;
-}
+
 .container-fluid {
-    font-family: Arial, Helvetica, sans-serif, cursive;
-    font-size: 1em;
+    font: 1em Arial, Helvetica, sans-serif;
 }
 .entry1 {
     padding: 1% 1% 5% 1%;
 }
 .gallery {
     margin: 0 auto;
-    padding-bottom: 3%;
-    padding-top: 5%;
+    padding: 0 5% 0 5%;
 }
 .copy {
     color: #777;
@@ -92,13 +87,15 @@ footer > .container-fluid {
     list-style-type: none;
     display: inline-flex;
 }
+/* ===== B L O C K Q U O T E ==== S T Y L I N G ==== */
+
 blockquote {
     padding-bottom: 5%;
     border: none;
 }
 blockquote p {
     padding-top: 5%;
-    font: 2em/2em "Courier New";
+    font: 2em/2em "Courier New", sans-serif;
 }
 blockquote footer {
     background: none;
@@ -107,15 +104,21 @@ blockquote footer {
 /* ===== F O O T E R ==== S T Y L I N G ==== */
 
 footer {
-    border-top: 2px dotted #cccccc;
     padding-bottom: 1%;
     color: #4d4d4d;
 }
+
+footer>.container-fluid {
+    padding: 5% 3%;
+    border-top: 2px dotted #cccccc;
+
+}
 .foot-head {
     padding: 0 0 1% 5%;
+
 }
 .foot-head h4 {
-    font: 4em "Josefin Slab", san-serif;
+    font: 4em "Oxygen", sans-serif;
     letter-spacing: .02em;
 }
 .foot-head h4>em {
@@ -127,17 +130,12 @@ footer {
 nav {
     display: none;
 }
-.sl-social li {
-    list-style-type: none;
-    display: inline-flex;
-    padding-left: 3%;
+.navbar-form .navbar-right {
+    width: 30%;
 }
 nav.menu li a {
     padding-left: 3%;
     font-family: "cutive mono", helvetica, arial, sans-serif;
-}
-ul.nav.menu {
-    clear: both;
 }
 .pagination nav {
     display: inline-flex;
@@ -146,12 +144,13 @@ ul.nav.menu {
 }
 .pager li a {
     color: #777;
+    border: none;
+    border-radius: 6px;
+
 }
 .nav.menu li a {
     color: #4d4d4d;
     text-transform: uppercase;
-}
-.nav.menu li:first-child {
 }
 .nav.menu li:last-child {
     padding-right: 1.5%;
@@ -183,10 +182,6 @@ img {
 /*==== T Y P O G R A P H Y === @FontFace ==== */
 
 @font-face {
-    font-family: "Inconsolata", serif;
-    src: url(http://fonts.googleapis.com/css?family=Inconsolata);
-}
-@font-face {
     font-family: "MyFontScript", "Amatic SC", cursive;
     src: local("Amatic SC");
     src: url(http://fonts.googleapis.com/css?family=Cutive+Mono);
@@ -196,24 +191,6 @@ img {
     font-style: normal;
     font-weight: 400;
     src: local('Cutive Mono'), local('CutiveMono-Regular'),    url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQbrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
-}
-@font-face {
-    font-family: 'Poiret One';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8b3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-}
-@font-face {
-    font-family: 'Josefin Slab';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Josefin Slab'), local('JosefinSlab'), url(http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
 @font-face {
     font-family: 'Amatic SC';
